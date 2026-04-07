@@ -49,7 +49,7 @@ Output STRICTLY in JSON:
 
 
 async def run_agent():
-    env = AutoEnv.from_env("MyEnvV4")
+    env = AutoEnv.from_env(MyEnvV4)
 
     observation = await env.reset()
 
