@@ -1,0 +1,20 @@
+name: procurement-auditor
+description: Simulates approval/rejection of purchase requests
+
+tasks:
+  - name: easy
+  - name: medium
+  - name: hard
+
+observation_space:
+  request_id: string
+  employee_role: string
+  item: string
+  cost: float
+  policy: string
+
+action_space:
+  decision: string
+  reasoning: string
+
+reward_range: [0.0, 1.0]
